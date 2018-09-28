@@ -2,6 +2,15 @@
     "Default": {
         "rules": [
             "DefaultCompositeRule"
-        ]
+        ],
+        "packages": {
+            "Microsoft.Data.Sqlite.Core": {
+                "Exclusions": {
+                    "SERVICING_ATTRIBUTE": {
+                        "lib/net40/Microsoft.Data.Sqlite.dll": "AssemblyMetadata attribute type doesn't exist in .NET 4.0"
+                    }
+                }
+            }
+        }
     }
 }
