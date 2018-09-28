@@ -3,6 +3,7 @@
 
 using System;
 using System.Data.Common;
+using System.Linq;
 using Microsoft.Data.Sqlite.Properties;
 using Xunit;
 
@@ -1096,7 +1097,7 @@ namespace Microsoft.Data.Sqlite
             }
         }
 
-        private static void GetX_works<T>(string sql, Func<DbDataReader, T> action, T expected)
+        private static void GetX_works<T>(string sql, Func<SqliteDataReader, T> action, T expected)
         {
             using (var connection = new SqliteConnection("Data Source=:memory:"))
             {
@@ -1112,7 +1113,7 @@ namespace Microsoft.Data.Sqlite
             }
         }
 
-        private static void GetX_throws_when_null(Action<DbDataReader> action)
+        private static void GetX_throws_when_null(Action<SqliteDataReader> action)
         {
             using (var connection = new SqliteConnection("Data Source=:memory:"))
             {
@@ -1129,7 +1130,7 @@ namespace Microsoft.Data.Sqlite
             }
         }
 
-        private static void X_throws_before_read(Action<DbDataReader> action)
+        private static void X_throws_before_read(Action<SqliteDataReader> action)
         {
             using (var connection = new SqliteConnection("Data Source=:memory:"))
             {
@@ -1144,7 +1145,7 @@ namespace Microsoft.Data.Sqlite
             }
         }
 
-        private static void X_throws_when_done(Action<DbDataReader> action)
+        private static void X_throws_when_done(Action<SqliteDataReader> action)
         {
             using (var connection = new SqliteConnection("Data Source=:memory:"))
             {
@@ -1164,7 +1165,7 @@ namespace Microsoft.Data.Sqlite
             }
         }
 
-        private static void X_throws_when_closed(Action<DbDataReader> action, string operation)
+        private static void X_throws_when_closed(Action<SqliteDataReader> action, string operation)
         {
             using (var connection = new SqliteConnection("Data Source=:memory:"))
             {
