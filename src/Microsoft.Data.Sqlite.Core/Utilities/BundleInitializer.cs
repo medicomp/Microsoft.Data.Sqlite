@@ -19,7 +19,11 @@ namespace Microsoft.Data.Sqlite.Utilities
                 return;
             }
 
+#if NET40
+            assembly.GetType("SQLitePCL.Batteries_V2").GetMethod("Init")
+#else
             assembly.GetType("SQLitePCL.Batteries_V2").GetTypeInfo().GetDeclaredMethod("Init")
+#endif
                 .Invoke(null, null);
         }
     }
