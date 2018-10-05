@@ -3,8 +3,10 @@
   <PropertyGroup>
     <AssemblyName>Microsoft.Data.Sqlite</AssemblyName>
     <RootNamespace>$(AssemblyName)</RootNamespace>
-    <PackageId>Microsoft.Data.Sqlite.Core</PackageId>
-    <Description>SQLite implementation of the System.Data.Common provider model.
+    <PackageId>Microsoft.Data.Sqlite.Core.MultiTarget</PackageId>
+    <Description>Fork of the Microsoft.Data.Sqlite project that adds .NET Framework 4.0 support for multi-targeted libraries.
+    
+SQLite implementation of the System.Data.Common provider model.
 
 Commonly Used Types:
 Microsoft.Data.Sqlite.SqliteCommand
@@ -19,6 +21,8 @@ Microsoft.Data.Sqlite.SqliteTransaction</Description>
     <MinClientVersion>3.6</MinClientVersion>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <CodeAnalysisRuleSet>Microsoft.Data.Sqlite.Core.ruleset</CodeAnalysisRuleSet>
+    <PackageProjectUrl>https://github.com/medicomp/Microsoft.Data.Sqlite</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
   </PropertyGroup>
 
   <!-- Necessary because of the fact that referencing Internal.AspNetCore.Sdk (where these properties are defined) breaks
@@ -34,8 +38,6 @@ Microsoft.Data.Sqlite.SqliteTransaction</Description>
     <IncludeSymbols>true</IncludeSymbols>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://raw.githubusercontent.com/aspnet/Home/2.0.0/LICENSE.txt</PackageLicenseUrl>
-    <PackageIconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</PackageIconUrl>
-    <PackageProjectUrl>https://asp.net</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 

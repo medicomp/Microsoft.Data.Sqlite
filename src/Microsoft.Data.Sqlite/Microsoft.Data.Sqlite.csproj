@@ -1,7 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>SQLite implementation of the System.Data.Common provider model.
+    <PackageId>Microsoft.Data.Sqlite.MultiTarget</PackageId>
+    <Description>Fork of the Microsoft.Data.Sqlite project that adds .NET Framework 4.0 support for multi-targeted libraries.
+    
+SQLite implementation of the System.Data.Common provider model.
 
 Commonly Used Types:
 Microsoft.Data.Sqlite.SqliteCommand
@@ -16,6 +19,8 @@ Microsoft.Data.Sqlite.SqliteTransaction</Description>
     <EnableApiCheck>false</EnableApiCheck>
     <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
     <MinClientVersion>3.6</MinClientVersion>
+    <PackageProjectUrl>https://github.com/medicomp/Microsoft.Data.Sqlite</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net40' ">

@@ -1,6 +1,10 @@
 Microsoft.Data.Sqlite
 =====================
 
+This is a fork of ASP.NET Core's [Microsoft.Data.Sqlite project](https://github.com/aspnet/Microsoft.Data.Sqlite) with added support for a .NET Framework 4.0 target so that this package can be used in multi-targeted libraries.  No additional functionality has been added.
+
+---------------------
+
 [![Travis build status](https://img.shields.io/travis/aspnet/Microsoft.Data.Sqlite.svg?label=travis-ci&branch=dev&style=flat-square)](https://travis-ci.org/aspnet/Microsoft.Data.Sqlite/branches)
 [![AppVeyor build status](https://img.shields.io/appveyor/ci/aspnetci/microsoft-data-sqlite/dev.svg?label=appveyor&style=flat-square)](https://ci.appveyor.com/project/aspnetci/microsoft-data-sqlite/branch/dev)
 

@@ -9,7 +9,7 @@
 
   <PropertyGroup>
     <Product>Microsoft .NET</Product>
-    <RepositoryUrl>https://github.com/aspnet/Microsoft.Data.Sqlite.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/medicomp/Microsoft.Data.Sqlite.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)build\Key.snk</AssemblyOriginatorKeyFile>
